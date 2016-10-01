@@ -20,7 +20,7 @@ void processGraph(graph *g) {
 		g->adjMat[i][i] = 0;
 	for (int i=0; i<lineSize; i++) {
 		scanf("%c", &next);
-		printf("%c", next);
+		//printf("%c", next);
 		next -= 63;
 		for (int k=32; k>0; k >>= 1) {
 			g->adjMat[row][col] = ((next&k)>0);
@@ -35,7 +35,7 @@ void processGraph(graph *g) {
 		}
 	}
 	scanf("%c",&next);
-	printf("\n");
+	//printf("\n");
 }
 void printGraph(graph *g) {
 	for (int i=0; i<n; i++) {
